@@ -4,15 +4,21 @@
 
 Batch Scripting Language
 
+![GitHub Logo](https://github.com/haithamaouati/Batch/blob/main/logo_64x64.png)
+
+This repository is an...
+
 ## Table of Contents
 
 - [Introduction](#introduction)
 - [Overview](#overview)
 - [Environment](#environment)
 - [Commands](#commands)
+  - [Built-in commands](#built-in-commands)
+  - [External commands](#external-commands)
 - [Item](#item)
 - [Disclaimer](#disclaimer)
-- [Author](#author)
+- [Contact](#contact)
 - [License](#license)
 
 ## Introduction
@@ -24,7 +30,7 @@ Batch Scripting Language.
 ```batch
 @echo off
 title script
-mode 120,30
+mode 120,20
 color 07
 REM Author: Haitham Aouati
 REM Social: @haithamaouati
@@ -54,19 +60,23 @@ Command|Uses
 ----|----
 HELP|Provides help information for Windows commands.
 
+## Built-in commands
+
+## External commands
+
 ## Item
+
+([Table of Contents](#table-of-contents))
 
 ## Disclaimer
 
 :warning: We are not responsible for any misuse or damage caused by this program. use this tool at your own risk!
 
-## Author
+## Contact
 
-Made with ❤️ and **bugs** by [**Haitham Aouati**](https://www.facebook.com/haithamaouati1/)
-&nbsp;&middot;&nbsp;
 Twitter [@haithamaouati](https://twitter.com/haithamaouati)
-
-([Table of Contents](#table-of-contents))
+&nbsp;&middot;&nbsp;
+GitHub [@haithamaouati](https://github.com/haithamaouati)
 
 ## License
 
