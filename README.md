@@ -57,6 +57,8 @@ goto :eof
 
 ## Commands
 
+## Built-in commands
+
 Command|Description
 ----|----
 HELP|Provides help information for Windows commands.
@@ -100,17 +102,6 @@ VER|Shows the command processor, operating system versions.
 VERIFY|Verifies that file copy has been done correctly.
 VOL|Shows the label of the current volume.
 
-Operator | Description
-----|----
-EQU|Equal to
-NEQ|Not equal to
-LSS|Less than
-LEQ|Less than or equal to
-GTR|Greater than
-GEQ|Greater than or equal to
-
-## Built-in commands
-
 ### COLOR
 
 Sets the default console foreground and background colors.
@@ -138,7 +129,17 @@ F|Bright White
  ```batch
 color 07
  ```
-
+ 
+### IF
+ 
+Operator | Description
+----|----
+EQU|Equal to
+NEQ|Not equal to
+LSS|Less than
+LEQ|Less than or equal to
+GTR|Greater than
+GEQ|Greater than or equal to
 
 ## External commands
 
