@@ -61,7 +61,7 @@ goto :eof
 
 Command|Description
 ----|----
-ASSOC|Associates an extension with a file type (FTYPE).
+ASSOC|Displays or modifies file extension associations.
 BREAK|Sets or clears extended CTRL+C checking.
 CALL|Calls one batch program from another.
 CD|CHDIR Displays or sets the current directory.
@@ -101,6 +101,9 @@ VER|Shows the command processor, operating system versions.
 VERIFY|Verifies that file copy has been done correctly.
 VOL|Shows the label of the current volume.
 
+### ASSOC
+Displays or modifies file extension associations.
+
 ### COLOR
 
 Sets the default console foreground and background colors.
@@ -131,14 +134,6 @@ color 07
  
 ### IF
 
-Performs conditional processing in batch programs.
-
-Syntax
- ```batch
-if [not] ERRORLEVEL <number> <command> [else <expression>]
-if [not] <string1>==<string2> <command> [else <expression>]
-if [not] exist <filename> <command> [else <expression>]
- ```
 Specifies a three-letter comparison operator, including:
 
 Operator | Description
@@ -154,35 +149,13 @@ GEQ|Greater than or equal to
  ```batch
 if not exist product.dat echo Cannot find data file
  ```
- 
-To delete the file Product.dat from the current directory or display a message if Product.dat is not found, type the following lines in a batch file:
-
-```batch
-IF EXIST Product.dat (
-del Product.dat
-) ELSE (
-echo The Product.dat file is missing.
-)
- ```
- 
- > Note: These lines can be combined into a single line as follows:
-
- ```batch
-IF EXIST Product.dat (del Product.dat) ELSE (echo The Product.dat file is missing.)
- ```
 
 ## External commands
 
 Command|Description
 ----|----
 ARP|text.
-AT|text.
-ATTRIB|text.
-BCDEDIT|text.
-CACLS|text.
-CHCP|text.
-CHKDSK|text.
-CHKNTFS|text.
+[ATTRIB](#attrib)|text.
 CHOICE|text.
 CIPHER|text.
 COMP|text.
@@ -190,7 +163,6 @@ CMD|text.
 DISKCOPY|text.
 DISKPART|text.
 DOSKEY|text.
-DRIVERQUERY|text.
 FIND|text.
 FINDSTR|text.
 HELP|Provides help information for Windows commands.
@@ -212,6 +184,33 @@ TIMEOUT|text.
 TREE|text.
 WMIC|text.
 XCOPY|text.
+
+### ATTRIB
+Displays or changes file attributes.
+
+Value|Description
+----|----
++|Sets an attribute.
+-|Clears an attribute.
+R|Read-only file attribute.
+A|Archive file attribute.
+S|System file attribute.
+H|Hidden file attribute.
+O|Offline attribute.
+I|Not content indexed file attribute.
+X|No scrub file attribute.
+V|Integrity attribute.
+P|Pinned attribute.
+U|Unpinned attribute.
+B|SMR Blob attribute. [drive:][path][filename] Specifies a file or files for attrib to process.
+/S|Processes matching files in the current folder and all subfolders.
+/D|Processes folders as well.
+/L|Work on the attributes of the Symbolic Link versus the target of the Symbolic Link
+
+> Examples: Hide readme.txt file.
+ ```batch
+attrib +h readme.txt
+ ```
 
 ## Item
 
