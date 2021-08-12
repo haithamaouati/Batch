@@ -40,6 +40,7 @@ cls
 goto :main
 
 :main
+echo Hello world!
 pause && cls && :end
 goto :eof
 
