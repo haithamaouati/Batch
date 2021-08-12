@@ -61,7 +61,6 @@ goto :eof
 
 Command|Description
 ----|----
-HELP|Provides help information for Windows commands.
 ASSOC|Associates an extension with a file type (FTYPE).
 BREAK|Sets or clears extended CTRL+C checking.
 CALL|Calls one batch program from another.
@@ -142,6 +141,46 @@ GTR|Greater than
 GEQ|Greater than or equal to
 
 ## External commands
+
+Command|Description
+----|----
+ARP|text.
+AT|text.
+ATTRIB|text.
+BCDEDIT|text.
+CACLS|text.
+CHCP|text.
+CHKDSK|text.
+CHKNTFS|text.
+CHOICE|text.
+CIPHER|text.
+COMP|text.
+CMD|text.
+DISKCOPY|text.
+DISKPART|text.
+DOSKEY|text.
+DRIVERQUERY|text.
+FIND|text.
+FINDSTR|text.
+HELP|Provides help information for Windows commands.
+IPCONFIG|text.
+LABEL|text.
+MODE|text.
+MORE|text.
+NET|text.
+OPENFILES|text.
+PING|text.
+REG|text.
+REPLACE|text.
+SHUTDOWN|text.
+SORT|text.
+SYSTEMINFO|text.
+TASKKILL|text.
+TASKLIST|text.
+TIMEOUT|text.
+TREE|text.
+WMIC|text.
+XCOPY|text.
 
 ## Item
 
