@@ -66,7 +66,7 @@ BREAK|Sets or clears extended CTRL+C checking.
 CALL|Calls one batch program from another.
 CD|CHDIR Displays or sets the current directory.
 CHCP|Displays or sets the active code page number.
-CLS|Clears the screen.
+[CLS](#cls)|Clears the screen.
 [COLOR](#color)|Sets the console foreground and background colors.
 COPY|Copies files.
 DATE|Displays and sets the system date.
@@ -103,6 +103,14 @@ VOL|Shows the label of the current volume.
 
 ### ASSOC
 Displays or modifies file extension associations.
+
+### CLS
+Clears the screen.
+
+> Examples: Clears the screen.
+ ```batch
+cls
+ ```
 
 ### COLOR
 
