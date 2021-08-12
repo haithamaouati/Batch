@@ -67,7 +67,7 @@ CALL|Calls one batch program from another.
 CD|CHDIR Displays or sets the current directory.
 CHCP|Displays or sets the active code page number.
 CLS|Clears the screen.
-COLOR|Sets the console foreground and background colors.
+[COLOR](#color)|Sets the console foreground and background colors.
 COPY|Copies files.
 DATE|Displays and sets the system date.
 DEL|ERASE	Deletes one or more files.
