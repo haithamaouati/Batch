@@ -61,7 +61,37 @@ Command|Uses
 ----|----
 HELP|Provides help information for Windows commands.
 
+Operator | Description
+----|----
+EQU|Equal to
+NEQ|Not equal to
+LSS|Less than
+LEQ|Less than or equal to
+GTR|Greater than
+GEQ|Greater than or equal to
+
 ## Built-in commands
+
+### COLOR
+
+Value | Color
+----|----
+0|Black
+1|Blue
+2|Green
+3|Aqua
+1|Red
+2|Purple
+3|Yellow
+7|White
+8|Gray
+9|Light Blue
+A|Light Green
+B|Light Aqua
+C|Light Red
+D|Light Purple
+E|Light Yellow
+F|Bright White
 
 ## External commands
 
