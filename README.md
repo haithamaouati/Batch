@@ -74,6 +74,8 @@ GEQ|Greater than or equal to
 
 ### COLOR
 
+Sets the default console foreground and background colors.
+
 Value | Color
 ----|----
 0|Black
@@ -92,6 +94,12 @@ C|Light Red
 D|Light Purple
 E|Light Yellow
 F|Bright White
+
+> Example: Use black background and white foreground.
+ ```batch
+color 07
+ ```
+
 
 ## External commands
 
