@@ -63,14 +63,14 @@ Command|Description
 ----|----
 ASSOC|Displays or modifies file extension associations.
 BREAK|Sets or clears extended CTRL+C checking.
-CALL|Calls one batch program from another.
-CD|CHDIR Displays or sets the current directory.
+[CALL](#call)|Calls one batch program from another.
+[CD](#xs)|CHDIR Displays or sets the current directory.
 CHCP|Displays or sets the active code page number.
 [CLS](#cls)|Clears the screen.
 [COLOR](#color)|Sets the console foreground and background colors.
-COPY|Copies files.
-DATE|Displays and sets the system date.
-DEL|ERASE	Deletes one or more files.
+[COPY](#copy)|Copies files.
+[DATE](#date)|Displays and sets the system date.
+[DEL](#del)|ERASE	Deletes one or more files.
 DIR|Displays a list of files and subdirectories in a directory.
 [ECHO](#echo)|Displays messages, or turns command echoing on or off.
 ELSE|Performs conditional processing in batch programs when "IF" is not true.
@@ -111,23 +111,12 @@ Clears the screen.
  ```batch
 cls
  ```
- 
- ### ECHO
-Displays messages, or turns command-echoing on or off.
 
-> Examples: Turns command-echoing on or off.
+### CALL
+Calls one batch program from another.
+> Examples: CALL command now accepts labels as the target of the CALL.
  ```batch
-echo off
- ```
- 
-> Examples: Displays messages.
- ```batch
-echo hell world
- ```
- 
- > Examples: New line.
- ```batch
-echo.
+CALL :label
  ```
 
 ### COLOR
@@ -157,7 +146,25 @@ F|Bright White
  ```batch
 color 07
  ```
+
+### ECHO
+Displays messages, or turns command-echoing on or off.
+
+> Examples: Turns command-echoing on or off.
+ ```batch
+echo off
+ ```
  
+> Examples: Displays messages.
+ ```batch
+echo hell world
+ ```
+ 
+ > Examples: New line.
+ ```batch
+echo.
+ ```
+
 ### IF
 
 Specifies a three-letter comparison operator, including:
