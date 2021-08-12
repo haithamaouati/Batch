@@ -72,7 +72,7 @@ COPY|Copies files.
 DATE|Displays and sets the system date.
 DEL|ERASE	Deletes one or more files.
 DIR|Displays a list of files and subdirectories in a directory.
-ECHO|Displays messages, or turns command echoing on or off.
+[ECHO](#echo)|Displays messages, or turns command echoing on or off.
 ELSE|Performs conditional processing in batch programs when "IF" is not true.
 ENDLOCAL|Ends localization of environment changes in a batch file.
 EXIT|Quits the CMD.EXE program (command interpreter).
@@ -110,6 +110,24 @@ Clears the screen.
 > Examples: Clears the screen.
  ```batch
 cls
+ ```
+ 
+ ### ECHO
+Displays messages, or turns command-echoing on or off.
+
+> Examples: Turns command-echoing on or off.
+ ```batch
+echo off
+ ```
+ 
+> Examples: Displays messages.
+ ```batch
+echo hell world
+ ```
+ 
+ > Examples: New line.
+ ```batch
+echo.
  ```
 
 ### COLOR
