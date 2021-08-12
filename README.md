@@ -21,6 +21,29 @@ Batch Scripting Language.
 
 ## Overview
 
+```batch
+@echo off
+title script
+mode 120,30
+color 07
+REM Author: Haitham Aouati
+REM Social: @haithamaouati
+cls
+
+::Go to main function
+goto :main
+
+:main
+pause && cls && :end
+goto :eof
+
+:end
+choice /c YN /n /t 10 /d Y /m "Do you want exit the program (Y/N)?"
+if %errorlevel% equ 1 exit /b
+if %errorlevel% equ 2 cls && goto :main
+goto :eof
+```
+
 ## Environment
 
 - Windows 7 / 8 / 8.1 / 10 / 11
