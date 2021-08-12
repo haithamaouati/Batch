@@ -79,7 +79,7 @@ EXIT|Quits the CMD.EXE program (command interpreter).
 FOR|Runs a specified command for each file in a set of files.
 FTYPE|Sets the file type command.
 GOTO|Goes to a label.
-IF|Performs conditional processing in batch programs.
+[IF](#if)|Performs conditional processing in batch programs.
 MD|MKDIR Creates a directory.
 MOVE|Moves a file to a new location
 PATH|Sets or modifies the PATH environment
@@ -130,7 +130,17 @@ color 07
  ```
  
 ### IF
- 
+
+Performs conditional processing in batch programs.
+
+Syntax
+ ```batch
+if [not] ERRORLEVEL <number> <command> [else <expression>]
+if [not] <string1>==<string2> <command> [else <expression>]
+if [not] exist <filename> <command> [else <expression>]
+ ```
+Specifies a three-letter comparison operator, including:
+
 Operator | Description
 ----|----
 EQU|Equal to
@@ -139,6 +149,27 @@ LSS|Less than
 LEQ|Less than or equal to
 GTR|Greater than
 GEQ|Greater than or equal to
+
+> Examples: To display the message Cannot find data file if the file Product.dat cannot be found, type:
+ ```batch
+if not exist product.dat echo Cannot find data file
+ ```
+ 
+To delete the file Product.dat from the current directory or display a message if Product.dat is not found, type the following lines in a batch file:
+
+```batch
+IF EXIST Product.dat (
+del Product.dat
+) ELSE (
+echo The Product.dat file is missing.
+)
+ ```
+ 
+ > Note: These lines can be combined into a single line as follows:
+
+ ```batch
+IF EXIST Product.dat (del Product.dat) ELSE (echo The Product.dat file is missing.)
+ ```
 
 ## External commands
 
