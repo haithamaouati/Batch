@@ -34,7 +34,7 @@ echo  ##########  ##########
 echo  ##########  ##########
 echo.
 echo  Author: Haitham Aouati
-echo  Repo: https://github.com/haithamaouati/Win10Activator
+echo  Repo: https://github.com/haithamaouati
 echo.
 echo 1) Active
 echo 0) Exit
@@ -63,7 +63,7 @@ echo Enterprise 2016 LTSB : DCPHK-NFMTC-H88MJ-PFHPY-QJ4BJ
 echo Enterprise 2016 LTSB N : QFFDN-GRT3P-VKWWX-X7T3R-8B639
 echo.
 set /p sn=Serial Number:
-cscript slmgr.vbs /ipk %sn%
+cscript slmgr.vbs /ipk "%sn%"
 cscript slmgr.vbs /skms kms.lotro.cc
 cscript slmgr.vbs /ato
 pause && cls && goto :main
