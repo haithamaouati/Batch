@@ -53,7 +53,12 @@ goto :eof
 
 ## Environment
 
-- Windows 7 / 8 / 8.1 / 10 / 11
+- Windows
+    -Windows 7
+    -Windows 8 
+    -Windows 8.1
+    -Windows 10
+    -Windows 11
 
 ## Commands
 
